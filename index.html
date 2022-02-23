@@ -6,28 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Simon Dice</title>
 </head>
 <body>
     
-    <header>
-        <div>
-            <h2>Press Start</h2>
-        </div>
-    </header>
     <main>
+        <div class="panel" id="control-panel">
+            <h2 id="round">Press Start</h2>
+        </div>
         <div class="table">
-            <div class="frame"></div>
+            <div>
+                <div class="frame frame1" id="cuadro1"></div>
 
-            <div class="frame"></div>
+                <div class="frame frame2" id="cuadro2"></div>
+            </div>
+            <div>
+                <div class="frame frame3" id="cuadro3"></div>
 
-            <div class="frame"></div>
-
-            <div class="frame"></div>
+                <div class="frame frame4" id="cuadro4"></div>
+            </div>
         </div>
 
-        <button class="start">Start</button>
+        <button class="start" id="start">Start</button>
     </main>
 
 

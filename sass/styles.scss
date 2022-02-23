@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "sansation";
+    src: url(../fonts/sansation/Sansation_Regular.ttf);
+}
+
+@font-face {
+    font-family: "clock";
+    src: url(../fonts/reloj/DS-DIGI.TTF);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "sansation";
+    background-color: #0B1014;
+
+    main {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+
+        .panel {
+            background-color: #303437;
+            width: 100%;
+            max-width: 744px;
+            height: 60px;
+            font-family: "sansation";
+            color: #7C8E98;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            
+            h2{
+                font-weight: 100;
+            }
+        }
+
+        .table {
+            div {
+                display: flex;
+                gap: 3rem;
+                .frame {
+                    width: 348px;
+                    height: 278px;
+                    
+                }
+
+                .frame1 {
+                    background-color: #1A6E00;
+                    border-top-left-radius: 50px;
+                }
+
+                .frame2 {
+                    background-color: #800003;
+                    border-top-right-radius: 50px;
+                }
+
+                .frame3 {
+                    background-color: #B8C424;
+                    border-bottom-left-radius: 50px;
+                }
+
+                .frame4 {
+                    background-color: #18377E;
+                    border-bottom-right-radius: 50px;
+                }
+
+            }
+
+            div:nth-child(odd) {
+                margin-bottom: 1rem;
+            }
+
+        }
+
+
+        button {
+            padding: .5rem 2.5rem;
+            font-size: 1.8rem;
+            color: #7C8E98;
+            border: 1px solid #7C8E98;
+            background-color: transparent;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background-color: #7C8E98;
+            color: #303437;
+            transition: .7s;
+        }
+
+
+    }
+
+
+
+
+}
