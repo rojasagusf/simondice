@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "sansation";
+    src: url(../fonts/sansation/Sansation_Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "sansation";
+    background-color: #0B1014;
+
+    main {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        div {
+            background-color: transparent;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 5px solid #7C8E98;
+            border-left: 100px solid transparent;
+            animation-name: roating;
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes roating {
+            0% {
+                transform: rotate(0deg);
+                
+            }
+
+            25% {
+                background-color: #1A6E00;
+            }
+
+            50% {
+                background-color: #800003;
+            }
+
+            75% {
+                background-color: #B8C424;
+            }
+
+            100% {
+                background-color: #18377E;
+                transform: rotate(360deg);
+            }
+        }
+
+
+
+        .title {
+            margin-bottom: 0;
+            margin-top: 3rem;
+            color: #7C8E98;
+            font-size: 2.5rem;
+        }
+
+        .subtitle {
+            color: #7C8E98;
+        }
+    }
+
+}
